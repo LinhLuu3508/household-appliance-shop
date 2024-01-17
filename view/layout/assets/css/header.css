@@ -1,0 +1,228 @@
+.header_top {
+    /* background: #c3b5b5; */
+    /* background: #0894be; */
+    background: #0099FF;
+    /* background: #092BFF; */
+    color: white;
+}
+/* header_top_left */
+.col-6.header_top_left ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: start;
+    column-gap: 10px;
+    padding: 14px 0 14px;
+}
+.col-6.header_top_left ul li {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+}
+/* header_top_right */
+.col-6.header_top_right{
+    /* background: #0099FF; */
+    justify-content: end;
+    align-items: center;
+    padding: 14px 0 14px;
+}
+.col-6.header_top_right ul {
+    display: flex;
+    list-style: none;
+    column-gap: 5px;
+}
+.col-6.header_top_right ul li i {
+    color:#FFFFFF;
+    padding: 0 5px 0 0;
+}
+.col-6.header_top_right ul a{
+    font-size: 14px;
+    display: inline-block;
+}
+
+.header_logo{
+    color: #0099FF;
+    padding: 15px 0;
+}
+.header_menu {
+    padding: 30px 0;
+}
+.header_cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+}
+#main-menu {
+    display: flex;
+    justify-content: space-between;
+}
+#menu-item {
+    text-decoration: none;
+    font-size: 18px;
+    /* color: #252525; */
+    color: #192A56;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    padding: 5px 0;
+    display: block;
+
+}
+.active #menu-item {
+    /* color: #0099FF; */
+    color: #192A56;
+}
+
+/*
+#main-menu {
+    display: flex;
+    list-style: none ;
+    padding: 0;
+    margin: 0;
+
+}*/
+#main-menu li {
+    position: relative;
+    list-style: none;
+}
+#main-menu li a:hover{
+    color: #0099FF;
+    /* color: #192A56; */
+}
+#main-menu li a {
+    color: #1c1c1c;
+    display: block;
+    padding: 10px 17px;
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+#main-menu ul.sub-menu {
+    position: absolute;
+    background:  #f5f5f5;
+    padding: 15px 0px;
+    list-style: none;
+    width: 200px;
+    border-bottom: 1px solid #d8d1d1;
+    display: none;
+}
+#main-menu li:hover>ul.sub-menu {
+    display: block;
+}
+#main-menu ul.sub-menu a{
+    padding: 8px 15px;
+    border-bottom: 1px solid #b1a7a7;
+    left: 0;
+}
+#main-menu ul.sub-menu li:hover>a {
+    border-bottom: 1px solid #d8d1d1;
+}
+#main-menu ul.sub-menu li:last-child a {
+    border: none;
+}
+#main-menu ul.sub-menu ul.sub-menu {
+    left: 199px;
+    top: -15px;
+}
+
+
+/* PHAN TIM KIEM, NUT DANG NHAP, BIEU TUONG GIO HANG  */
+img#logo {
+    max-width:auto;
+    max-height: 80px;
+}
+
+.banner {
+    max-width: 800px;
+    display: block;
+}
+
+.login {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.login a i {
+    color: #0099FF;
+}
+
+button.btn.btn-primary { 
+    padding: 5px 0;
+    width: 100px;
+}
+
+input#form1.form-control {
+    padding: 5px 0;
+    width: auto;
+}
+
+div.header_cart {
+    padding: 30px 0;
+}
+#x1 {
+    padding: 0 0 0 32px;
+    margin: 0 0 0 32px;
+    display: flex;
+}
+#x1 a{
+    padding-left: 15px;
+}
+input#form1.form-control{
+    /* width: 100px; */
+}
+.login .dangky{
+    width: 10px;
+}
+.form-outline input{
+    display: flex;
+}
+/*THIET LAP BODER KHI HOVER */
+#main-menu>li>a {
+    position: relative;
+}
+#main-menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0px;
+    background: #0099FF;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transition: 0.25s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#main-menu>li:hover>a::before {
+    display: block;
+    width: 100px;
+}
+#main-menu>li.has-child::after {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f107";
+    color: #0099FF;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 12px 0px;
+}
+#main-menu .sub-menu li:hover>a {
+    color:#0099FF;
+} 
+#main-menu .sub-menu>li.has-child::after {
+    font-family: "FontAwesome";
+    font-weight: 900;
+    content: "\f105";
+    color: #0099FF;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    padding: 8px 0px;
+}
+#main-menu .sub-menu>li.has-child:hover::after {
+    color: #0099FF;
+}

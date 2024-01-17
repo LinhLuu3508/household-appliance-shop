@@ -1,0 +1,28 @@
+:root{
+    --main-bg:#0099FF;
+  }
+  
+.main-bg {
+  background: var(--main-bg) !important;
+ 
+}
+body{
+  background-image: url(./img/pngtree-2018-nordic-style-small-fresh-home-appliance-furniture-banner-image_196539.jpg);
+}
+input:focus, button:focus {
+  border: 1px solid var(--main-bg) !important;
+  box-shadow: none !important;
+}
+
+.form-check-input:checked {
+  background-color: var(--main-bg) !important;
+  border-color: var(--main-bg) !important;
+}
+  
+.card, .btn, input{
+  border-radius:0 !important;
+}
+img {
+  justify-content: left;
+  align-items:flex-start;
+}

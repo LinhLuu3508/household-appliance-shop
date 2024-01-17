@@ -1,0 +1,22 @@
+.sp-admin {
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+}
+input {
+    justify-content: center;
+}
+input[type=text] {  
+    border: 2px solid ;  
+    border-radius: 4px;
+    justify-content: center;
+}
+input[type=text]:hover {
+    color: #0099FF;
+}
+/* table tr th {
+    background-color: #0099FF;
+} */
+/* table th:nth-child(1){
+    background-color:red;
+} */
